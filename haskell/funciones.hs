@@ -32,3 +32,4 @@ main = menu
 --cd haskell
 --ghci
 --dos puntos + load funciones.hs
+--main
