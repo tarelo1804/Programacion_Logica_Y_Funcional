@@ -45,8 +45,9 @@ fetch(url+"characters").then(response=>{
     console.log("Datos del Personaje: ", data)
     var lis = ""
     data.results.forEach(personaje=>{
-        lis+=`<li>
-            <img src="https://cdn.thesimpsonsapi.com/500${personaje.portrait_path}"width="200px" />
+        lis+=`
+        <li>
+            <img src="https://cdn.thesimpsonsapi.com/500${personaje.portrait_path}"width="200px"/>
             <h2>${personaje.name}</h2>
         </li>`
     })
