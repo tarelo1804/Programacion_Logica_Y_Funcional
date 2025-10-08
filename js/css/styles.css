@@ -1,0 +1,92 @@
+:root{
+    --bg:#1daefc;
+    --text:#fff;
+    --fondo:rgb(240, 240, 21);
+}
+*{
+    margin: 0;
+    padding: 0px;
+}
+body{
+    background-color: var(--bg);
+    font-family: 'Simpsonfont', sans-serif;
+    font-family: 'Akbar', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+}
+header > .logo > img{
+    width: 100px;
+}
+.a{
+    margin: 0 15px;
+    color: var(--texto);
+    text-decoration: none;
+    font-weight: bold;
+}
+.search{
+    background-color: var(--fondo);
+    border-radius: 30px;
+    height: 40px;
+    width: 250px;
+}
+.input{
+    background-color: transparent;
+    outline-color:transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    outline: none;
+    height: 40px;
+    padding-left: 15px;
+}
+#lista{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+}
+#lista li{
+    list-style: none;
+    background-color: white;
+    color: #1d1d1d;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px #1d1d1d;
+    transition: all 0.3s ease-in-out;
+}
+#lista > li:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 4px 20px var(--fondo);
+}
+#lista > li > h2{
+    width: 100%;
+    font-size: 1rem;
+    color: #1d1d1d;
+}
+#preloader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    background-image: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTdxeW51dWVrdDJhOWdkMGZnNzZwcm5lZ2Zvc3k4NjB6NGg5MnAzNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3orieQHmkjxSiLGC08/giphy.gif");
+    background-size: 100% 100%;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    animation-name:opacidad;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+@keyframes opacidad{
+    from{
+        opacity: 0.2;
+    }
+    to{
+        opacity: 1;
+    }
+}
