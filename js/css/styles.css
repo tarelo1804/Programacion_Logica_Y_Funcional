@@ -20,17 +20,31 @@ header{
 header > .logo > img{
     width: 100px;
 }
+nav{
+    font-size: 0.7rem;
+    margin-top: 13px;
+}
 .a{
-    margin: 0 15px;
+    margin: 0 12px;
     color: var(--texto);
     text-decoration: none;
     font-weight: bold;
+
+}
+.container-search{
+    background-color: var(--fondo);
+    border-radius: 30px;
+    height: 40px;
+    width: 200px;
 }
 .search{
     background-color: var(--fondo);
     border-radius: 30px;
     height: 40px;
-    width: 250px;
+    width: 200px;
+}
+i{
+    margin-left: 10px;
 }
 .input{
     background-color: transparent;
@@ -39,7 +53,7 @@ header > .logo > img{
     color: rgb(0, 0, 0);
     outline: none;
     height: 40px;
-    padding-left: 15px;
+    margin-left: 5px;
 }
 #lista{
     display: grid;
